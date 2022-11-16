@@ -4,11 +4,11 @@ const galleryMarking = document.querySelector(".gallery");
 
 const galleryElements = galleryItems
   .map(
-    ({ preview, original, description }) =>
-      `<div class="gallary__item">
-        <a class="gallary__link" href="${original}">
-        <img class="gallary__image" src="${preview}" 
-        data-source="${original}" 
+    ({ preview, description, original }) =>
+      `<div class="gallery__item">
+        <a class="gallery__link" href="${original}">
+        <img class="gallery__image" src="${preview}"
+        data-source="${original}"
         alt="${description}"/>
         </a>
         </div>`

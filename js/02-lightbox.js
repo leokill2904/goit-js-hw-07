@@ -6,12 +6,14 @@ const galleryMarking = document.querySelector(".gallery");
 const galleryElements = galleryItems
   .map(
     ({ preview, original, description }) =>
-      ` <a class="gallery__item"
+      `<li class="item">
+       <a class="gallery__item"
         href="${original}">
         <img class="gallery__image"
         src="${preview}"
         alt="${description}"/>
-        </a>`
+        </a>
+      </li>`
   )
   .join("");
 
